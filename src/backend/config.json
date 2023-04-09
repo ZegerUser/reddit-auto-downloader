@@ -1,15 +1,1 @@
-{
-    // To get these params follow this guide https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example#first-steps
-    "client_id": "client_id",
-    "client_secret": "client_secret",
-    "password": "password",
-    "user_agent": "user_agent",
-    "username": "username",
-    "subreddits": [
-        "MemeEconomy",
-        "memes",
-        "Memes_Of_The_Dank",
-        "meme",
-        "dankmemes"
-    ]
-}
+{"client_id":"client_id","client_secret":"client_secret","password":"password","user_agent":"user_agent","username":"username","subreddits":["memes","Memes_Of_The_Dank","meme","dankmemes"]}
