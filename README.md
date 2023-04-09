@@ -4,5 +4,5 @@ This is a modified version of BDFR (https://github.com/aliparlakci/bulk-download
 ##  Usage
 
 - Download desired version
-- Make config.json file
+- Make config.json file and save it in the same folder as archiver.py
 - Run archiver.py
