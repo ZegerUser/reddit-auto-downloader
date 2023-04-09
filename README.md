@@ -3,6 +3,6 @@ A modified version of BDFR (https://github.com/aliparlakci/bulk-downloader-for-r
 
 ##  Usage
 
-- Download desire version
+- Download desired version
 - Make config.json file
 - Run archiver.py
