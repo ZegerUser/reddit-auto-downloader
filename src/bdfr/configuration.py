@@ -13,12 +13,12 @@ import yaml
 import os
 
 class Configuration(Namespace):
-    def __init__(self, typeOf):
+    def __init__(self, savepath):
         super(Configuration, self).__init__()
         self.authenticate = False
         self.config = None
         self.opts: Optional[str] = None
-        self.directory: str = f"{os.getcwd()}\\archive-{typeOf}"
+        self.directory: str = f"{os.getcwd()}\\archive-{savepath}"
         self.disable_module: list[str] = []
         self.exclude_id = []
         self.exclude_id_file = []

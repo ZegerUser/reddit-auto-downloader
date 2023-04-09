@@ -16,17 +16,16 @@ class archiver():
                              password=config["password"],
                              user_agent=config["user_agent"],
                              username=config["username"])
-
         subreddits = "+".join([f"{sub}" for sub in config["subreddits"]])
         #subreddits = config["subreddits"]
         self.subreddit = reddit.subreddit(subreddits)
-        self.typeOf = configfile[7:-5]
+        self.savepath = configfile[:-5]
     def start(self):
         for submission in self.subreddit.stream.submissions(skip_existing=True):
             Thread(target=self.downloader(submission)).start()
 
     def downloader(self, submission):
-        configuration = Configuration(self.typeOf)
+        configuration = Configuration(self.savepath)
         RedditCloner(args=configuration).download(submission)
 
 
